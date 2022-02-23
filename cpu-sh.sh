@@ -6,6 +6,7 @@ foo () {
     echo "Starting ${run}";
     local START_TIME=$SECONDS
     #echo $((13**99)) 1>/dev/null 2>&1
+    #calculate pi to scale number of decimal points
     echo 'scale=6000;pi=4*a(1);0' | bc -l;
     local ELAPSED_TIME=$(($SECONDS - $START_TIME))
     echo "Finishing ${run} in ${ELAPSED_TIME} seconds";
