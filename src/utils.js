@@ -7,6 +7,7 @@ export function mySlowFunction(baseNumber) {
 	};
   var endTime = new Date().getTime();
   console.log(`endtime ${endTime}`);
+  console.log(`Testing ${(endTime - startTime)/1000} seconds`);
 	return (endTime - startTime)/1000;
 }
 
